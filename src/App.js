@@ -17,8 +17,8 @@ import Orders from './component/Orders/Order.js';
 import Footer from "./component/Footer/Footer.js";
 // import Footer from './components/Footer/Footer';
 
-const promise =loadStripe(
-	"pk_test_51ONxtiAhxX6KlYPvkqPNQOklzMYeSfrY6hZMNXHRKFXPfrJs46vjsfrc8gETushF5ZGw5tlwgGdvBOpomHbPNA4V007SQz12mh"
+const promise = loadStripe(
+	'pk_test_51ONxtiAhxX6KlYPvkqPNQOklzMYeSfrY6hZMNXHRKFXPfrJs46vjsfrc8gETushF5ZGw5tlwgGdvBOpomHbPNA4V007SQz12mh'
 );
 function App() {
 	const [{}, dispatch] = useStateValue();
