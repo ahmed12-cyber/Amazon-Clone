@@ -1,0 +1,1308 @@
+[debug] [2023-12-29T08:09:48.545Z] ----------------------------------------------------------------------
+[debug] [2023-12-29T08:09:48.554Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-12-29T08:09:48.555Z] CLI Version:   13.0.2
+[debug] [2023-12-29T08:09:48.556Z] Platform:      win32
+[debug] [2023-12-29T08:09:48.557Z] Node Version:  v18.17.1
+[debug] [2023-12-29T08:09:48.560Z] Time:          Fri Dec 29 2023 11:09:48 GMT+0300 (East Africa Time)
+[debug] [2023-12-29T08:09:48.561Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-29T08:09:53.461Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-29T08:09:53.463Z] > authorizing via signed-in user (ahmedrediwan1@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2023-12-29T08:09:53.516Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-29T08:09:53.517Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-29T08:09:53.518Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-12-29T08:09:54.094Z] [hub] writing locator at C:\Users\Ahmed\AppData\Local\Temp\hub-clone-7d3c0.json
+[debug] [2023-12-29T08:09:54.440Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-29T08:09:54.440Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-12-29T08:09:54.474Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2023-12-29T08:09:54.566Z] defaultcredentials: writing to file C:\Users\Ahmed\AppData\Roaming\firebase\ahmedrediwan1_gmail_com_application_default_credentials.json
+[debug] [2023-12-29T08:09:59.512Z] Setting GAC to C:\Users\Ahmed\AppData\Roaming\firebase\ahmedrediwan1_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Ahmed\\AppData\\Roaming\\firebase\\ahmedrediwan1_gmail_com_application_default_credentials.json"}}
+[debug] [2023-12-29T08:09:59.516Z] > refreshing access token with scopes: []
+[debug] [2023-12-29T08:09:59.522Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-12-29T08:09:59.523Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-29T08:10:13.015Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-12-29T08:10:13.017Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-12-29T08:10:14.692Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-7d3c0/adminSdkConfig [none]
+[debug] [2023-12-29T08:10:15.878Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-7d3c0/adminSdkConfig 200
+[debug] [2023-12-29T08:10:15.879Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-7d3c0/adminSdkConfig {"projectId":"clone-7d3c0","storageBucket":"clone-7d3c0.appspot.com"}
+[debug] [2023-12-29T08:10:16.270Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-7d3c0/sites 
+[debug] [2023-12-29T08:10:18.884Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-7d3c0/sites 200
+[debug] [2023-12-29T08:10:18.884Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-7d3c0/sites {"sites":[{"name":"projects/clone-7d3c0/sites/ahmed-amazo","defaultUrl":"https://ahmed-amazo.web.app","appId":"1:799313214211:web:240ed80e697976a2470736","type":"USER_SITE"},{"name":"projects/clone-7d3c0/sites/clone-7d3c0","defaultUrl":"https://clone-7d3c0.web.app","appId":"1:799313214211:web:2c52813963550394470736","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-29T08:10:18.885Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-7d3c0/webApps/1:799313214211:web:2c52813963550394470736/config [none]
+[debug] [2023-12-29T08:10:20.062Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-7d3c0/webApps/1:799313214211:web:2c52813963550394470736/config 200
+[debug] [2023-12-29T08:10:20.062Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-7d3c0/webApps/1:799313214211:web:2c52813963550394470736/config {"projectId":"clone-7d3c0","appId":"1:799313214211:web:2c52813963550394470736","storageBucket":"clone-7d3c0.appspot.com","apiKey":"AIzaSyDgL0UTSocRMqtxIu0p3Dnq4nGAOEpZzqU","authDomain":"clone-7d3c0.firebaseapp.com","messagingSenderId":"799313214211","measurementId":"G-7X82RJBWKE"}
+[debug] [2023-12-29T08:10:20.221Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-7d3c0 [none]
+[debug] [2023-12-29T08:10:21.346Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-7d3c0 200
+[debug] [2023-12-29T08:10:21.346Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-7d3c0 {"projectId":"clone-7d3c0","projectNumber":"799313214211","displayName":"Amazon-Clone","name":"projects/clone-7d3c0","resources":{"hostingSite":"clone-7d3c0"},"state":"ACTIVE","etag":"1_25d04d03-1d08-4458-8fb2-32398e86f7ab"}
+[info] i  hosting[clone-7d3c0]: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
+[info] +  hosting[clone-7d3c0]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2023-12-29T08:10:29.451Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-12-29T08:10:29.452Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-12-29T08:10:29.453Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\Ahmed\\.cache\\firebase\\emulators\\ui-v1.11.7\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\Ahmed\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.7\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-12-29T08:10:31.893Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-12-29T08:10:31.894Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\Ahmed\Desktop\app\amazon-app\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\" for Cloud Functions..."}}
+[debug] [2023-12-29T08:10:32.192Z] Validating nodejs source
+[debug] [2023-12-29T08:10:42.693Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+    at async FunctionsEmulator.connect (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:262:13)
+    at async Object.startAll (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:566:13)
+[debug] [2023-12-29T08:10:42.695Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:10:42.696Z] Building nodejs source
+[debug] [2023-12-29T08:10:42.697Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-29T08:10:42.706Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:10:42.945Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-29T08:10:51.450Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:10:52.489Z] Validating nodejs source
+[debug] [2023-12-29T08:11:02.584Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:11:02.593Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:11:02.594Z] Building nodejs source
+[debug] [2023-12-29T08:11:02.594Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-29T08:11:02.794Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:11:02.822Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-29T08:11:02.870Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8883/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8883 {"message":"request to http://localhost:8883/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8883","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2023-12-29T08:11:03.003Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:11:04.080Z] Validating nodejs source
+[debug] [2023-12-29T08:11:14.616Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:11:14.618Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:11:14.619Z] Building nodejs source
+[debug] [2023-12-29T08:11:14.620Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-29T08:11:14.642Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:11:14.698Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-29T08:11:15.035Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8019/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8019 {"message":"request to http://localhost:8019/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8019","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-12-29T08:11:25.098Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8562/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8562 {"message":"request to http://localhost:8562/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8562","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2023-12-29T08:11:37.004Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:11:37.803Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:11:38.832Z] Validating nodejs source
+[debug] [2023-12-29T08:11:49.478Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:11:49.544Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:11:49.545Z] Building nodejs source
+[debug] [2023-12-29T08:11:49.545Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-29T08:11:49.556Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:11:49.697Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-29T08:11:50.005Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[info] Serving at port 8019
+
+[info] Serving at port 8562
+
+[info] Serving at port 8883
+
+[debug] [2023-12-29T08:11:51.008Z] Validating nodejs source
+[debug] [2023-12-29T08:12:01.383Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:12:01.385Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:12:01.386Z] Building nodejs source
+[debug] [2023-12-29T08:12:01.386Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-29T08:12:01.394Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:12:01.459Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8792
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2023-12-29T08:12:51.221Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:12:52.336Z] Validating nodejs source
+[debug] [2023-12-29T08:13:02.679Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:13:02.683Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:13:02.684Z] Building nodejs source
+[debug] [2023-12-29T08:13:02.685Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-29T08:13:02.704Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:13:02.935Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8770
+
+[debug] [2023-12-29T08:13:04.243Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2023-12-29T08:13:05.278Z] Validating nodejs source
+[debug] [2023-12-29T08:13:15.355Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:13:15.357Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:13:15.358Z] Building nodejs source
+[debug] [2023-12-29T08:13:15.358Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-29T08:13:15.571Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:13:15.641Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8861
+
+[debug] [2023-12-29T08:13:15.780Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2023-12-29T08:13:19.689Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:13:19.693Z] Validating nodejs source
+[debug] [2023-12-29T08:13:29.779Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:13:29.781Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:13:29.787Z] Building nodejs source
+[debug] [2023-12-29T08:13:29.787Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-29T08:13:29.911Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:13:29.938Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-29T08:13:29.978Z] Validating nodejs source
+[debug] [2023-12-29T08:13:40.168Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:13:40.169Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:13:40.170Z] Building nodejs source
+[debug] [2023-12-29T08:13:40.171Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] Serving at port 8498
+
+[debug] [2023-12-29T08:13:40.188Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:13:40.211Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8585
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] Serving at port 8546
+
+[info] server running on port 5500
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[error] This value must be greater than or equal to 1.
+
+[debug] [2023-12-29T08:39:12.977Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json changed, reloading triggers"}}
+[debug] [2023-12-29T08:39:13.989Z] Validating nodejs source
+[debug] [2023-12-29T08:39:24.914Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:39:24.916Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:39:24.916Z] Building nodejs source
+[debug] [2023-12-29T08:39:24.917Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-29T08:39:25.289Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:39:25.329Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-29T08:39:26.731Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json changed, reloading triggers"}}
+[debug] [2023-12-29T08:39:27.736Z] Validating nodejs source
+[debug] [2023-12-29T08:39:38.071Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:39:38.073Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:39:38.074Z] Building nodejs source
+[debug] [2023-12-29T08:39:38.074Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[debug] [2023-12-29T08:39:38.084Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:39:38.110Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-29T08:39:38.154Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8677/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8677 {"message":"request to http://localhost:8677/__/quitquitquit failed, reason: connect ECONNREFUSED ::1:8677","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[info] Serving at port 8039
+
+[info] Serving at port 8677
+
+[error] SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+    at parse (<anonymous>)
+    at readPackage (node:internal/modules/cjs/loader:378:42)
+    at tryPackage (node:internal/modules/cjs/loader:424:15)
+    at Module._findPath (node:internal/modules/cjs/loader:680:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at loadModule (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23) {
+  path: 'C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json'
+}
+
+[debug] [2023-12-29T08:39:44.420Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2023-12-29T08:41:38.629Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:41:39.632Z] Validating nodejs source
+[debug] [2023-12-29T08:41:48.695Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:41:48.696Z] Building nodejs source
+[debug] [2023-12-29T08:41:48.696Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:41:48.817Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:41:48.841Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8833
+
+[error] SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+    at parse (<anonymous>)
+    at readPackage (node:internal/modules/cjs/loader:378:42)
+    at tryPackage (node:internal/modules/cjs/loader:424:15)
+    at Module._findPath (node:internal/modules/cjs/loader:680:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at loadModule (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23) {
+  path: 'C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json'
+}
+
+[debug] [2023-12-29T08:41:52.068Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-12-29T08:43:06.179Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:43:07.432Z] Validating nodejs source
+[debug] [2023-12-29T08:43:18.229Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:43:18.233Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:43:18.234Z] Building nodejs source
+[debug] [2023-12-29T08:43:18.234Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:43:18.454Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:43:18.481Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-29T08:43:18.734Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:43:19.245Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:43:20.366Z] Validating nodejs source
+[debug] [2023-12-29T08:43:32.050Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:43:32.052Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:43:32.052Z] Building nodejs source
+[debug] [2023-12-29T08:43:32.053Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:43:32.290Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:43:32.314Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8470
+
+[error] SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+    at parse (<anonymous>)
+    at readPackage (node:internal/modules/cjs/loader:378:42)
+    at tryPackage (node:internal/modules/cjs/loader:424:15)
+    at Module._findPath (node:internal/modules/cjs/loader:680:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at loadModule (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23) {
+  path: 'C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json'
+}
+
+[debug] [2023-12-29T08:43:32.575Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2023-12-29T08:43:33.966Z] Validating nodejs source
+[debug] [2023-12-29T08:43:44.470Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:43:44.480Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:43:44.481Z] Building nodejs source
+[debug] [2023-12-29T08:43:44.482Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:43:44.606Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:43:44.676Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8537
+
+[error] SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+    at parse (<anonymous>)
+    at readPackage (node:internal/modules/cjs/loader:378:42)
+    at tryPackage (node:internal/modules/cjs/loader:424:15)
+    at Module._findPath (node:internal/modules/cjs/loader:680:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at loadModule (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23) {
+  path: 'C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json'
+}
+
+[debug] [2023-12-29T08:43:44.991Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2023-12-29T08:43:46.286Z] Validating nodejs source
+[debug] [2023-12-29T08:43:57.051Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:44:01.050Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:44:02.694Z] Building nodejs source
+[debug] [2023-12-29T08:44:02.696Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:44:02.727Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:44:02.747Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8611
+
+[error] SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+    at parse (<anonymous>)
+    at readPackage (node:internal/modules/cjs/loader:378:42)
+    at tryPackage (node:internal/modules/cjs/loader:424:15)
+    at Module._findPath (node:internal/modules/cjs/loader:680:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at loadModule (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23) {
+  path: 'C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json'
+}
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] Serving at port 8240
+
+[error] SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+    at parse (<anonymous>)
+    at readPackage (node:internal/modules/cjs/loader:378:42)
+    at tryPackage (node:internal/modules/cjs/loader:424:15)
+    at Module._findPath (node:internal/modules/cjs/loader:680:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at loadModule (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23) {
+  path: 'C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json'
+}
+
+[debug] [2023-12-29T08:44:07.893Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-12-29T08:44:13.588Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:44:14.614Z] Validating nodejs source
+[debug] [2023-12-29T08:44:25.009Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:44:25.013Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:44:25.014Z] Building nodejs source
+[debug] [2023-12-29T08:44:25.014Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:44:25.193Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:44:25.284Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-29T08:44:27.380Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:44:28.431Z] Validating nodejs source
+[debug] [2023-12-29T08:44:38.610Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:44:38.612Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:44:38.612Z] Building nodejs source
+[debug] [2023-12-29T08:44:38.612Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:44:38.621Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:44:38.644Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8987
+
+[debug] [2023-12-29T08:44:38.700Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] Serving at port 8763
+
+[error] SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+    at parse (<anonymous>)
+    at readPackage (node:internal/modules/cjs/loader:378:42)
+    at tryPackage (node:internal/modules/cjs/loader:424:15)
+    at Module._findPath (node:internal/modules/cjs/loader:680:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at loadModule (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23) {
+  path: 'C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json'
+}
+
+[debug] [2023-12-29T08:44:39.707Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+[debug] [2023-12-29T08:44:39.709Z] Validating nodejs source
+[debug] [2023-12-29T08:44:46.685Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:44:46.685Z] Building nodejs source
+[debug] [2023-12-29T08:44:46.686Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:44:46.692Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:44:46.712Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] Serving at port 8947
+
+[error] SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+    at parse (<anonymous>)
+    at readPackage (node:internal/modules/cjs/loader:378:42)
+    at tryPackage (node:internal/modules/cjs/loader:424:15)
+    at Module._findPath (node:internal/modules/cjs/loader:680:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at loadModule (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23) {
+  path: 'C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json'
+}
+
+[debug] [2023-12-29T08:44:48.002Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-12-29T08:45:12.953Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:45:13.966Z] Validating nodejs source
+[debug] [2023-12-29T08:45:24.193Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:45:24.195Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:45:24.196Z] Building nodejs source
+[debug] [2023-12-29T08:45:24.196Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:45:24.389Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:45:24.402Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:45:24.491Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-29T08:45:25.436Z] Validating nodejs source
+[debug] [2023-12-29T08:45:35.853Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:45:35.854Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:45:35.855Z] Building nodejs source
+[debug] [2023-12-29T08:45:35.855Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:45:36.143Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:45:36.173Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8942
+
+[debug] [2023-12-29T08:45:37.686Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:45:37.962Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:45:38.970Z] Validating nodejs source
+[debug] [2023-12-29T08:45:49.772Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:45:49.773Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:45:49.774Z] Building nodejs source
+[debug] [2023-12-29T08:45:49.774Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:45:49.847Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:45:49.903Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] Serving at port 8800
+
+[debug] [2023-12-29T08:45:50.408Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[error] SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+    at parse (<anonymous>)
+    at readPackage (node:internal/modules/cjs/loader:378:42)
+    at tryPackage (node:internal/modules/cjs/loader:424:15)
+    at Module._findPath (node:internal/modules/cjs/loader:680:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at loadModule (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23) {
+  path: 'C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json'
+}
+
+[debug] [2023-12-29T08:45:50.560Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:45:51.612Z] Validating nodejs source
+[debug] [2023-12-29T08:46:02.484Z] checkFunctionsSDKVersion was unable to fetch information from NPM Error: spawnSync C:\WINDOWS\system32\cmd.exe ETIMEDOUT
+    at Object.spawnSync (node:internal/child_process:1110:20)
+    at Object.spawnSync (node:child_process:871:24)
+    at Function.spawnSync [as sync] (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\cross-spawn\index.js:26:23)
+    at Object.getLatestSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:54:25)
+    at Object.checkFunctionsSDKVersion (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\versioning.js:74:32)
+    at Delegate.validate (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\functions\runtimes\node\index.js:84:20)
+    at FunctionsEmulator.discoverTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:296:35)
+    at async FunctionsEmulator.loadTriggers (C:\Users\Ahmed\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:325:34)
+[debug] [2023-12-29T08:46:02.485Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:46:02.486Z] Building nodejs source
+[debug] [2023-12-29T08:46:02.486Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] Serving at port 8249
+
+[debug] [2023-12-29T08:46:02.727Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:46:02.749Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-12-29T08:46:03.173Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:46:04.240Z] Validating nodejs source
+[debug] [2023-12-29T08:46:14.033Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:46:14.034Z] Building nodejs source
+[debug] [2023-12-29T08:46:14.035Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:46:14.068Z] File C:\Users\Ahmed\Desktop\app\amazon-app\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\index.js changed, reloading triggers"}}
+[debug] [2023-12-29T08:46:14.090Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:46:14.154Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[info] Serving at port 8912
+
+[error] !!  functions: Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: User code failed to load. Cannot determine backend specification"}}
+[debug] [2023-12-29T08:46:15.072Z] Validating nodejs source
+[debug] [2023-12-29T08:46:23.810Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {},
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.9.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-12-29T08:46:23.810Z] Building nodejs source
+[debug] [2023-12-29T08:46:23.811Z] Failed to find version of module node: reached end of search path C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-12-29T08:46:23.819Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-12-29T08:46:23.839Z] Found firebase-functions binary at 'C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8465
+
+[error] SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+    at parse (<anonymous>)
+    at readPackage (node:internal/modules/cjs/loader:378:42)
+    at tryPackage (node:internal/modules/cjs/loader:424:15)
+    at Module._findPath (node:internal/modules/cjs/loader:680:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at loadModule (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23) {
+  path: 'C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json'
+}
+
+[debug] [2023-12-29T08:46:23.943Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[info] Serving at port 8916
+
+[error] SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+    at parse (<anonymous>)
+    at readPackage (node:internal/modules/cjs/loader:378:42)
+    at tryPackage (node:internal/modules/cjs/loader:424:15)
+    at Module._findPath (node:internal/modules/cjs/loader:680:18)
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1063:27)
+    at Module._load (node:internal/modules/cjs/loader:922:27)
+    at Module.require (node:internal/modules/cjs/loader:1143:19)
+    at require (node:internal/modules/cjs/helpers:121:18)
+    at loadModule (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:40:16)
+    at loadStack (C:\Users\Ahmed\Desktop\app\amazon-app\functions\node_modules\firebase-functions\lib\runtime\loader.js:93:23) {
+  path: 'C:\\Users\\Ahmed\\Desktop\\app\\amazon-app\\functions\\package.json'
+}
+
+[debug] [2023-12-29T08:46:25.325Z] Got response code 400; body Failed to generate manifest from function source: SyntaxError: Error parsing C:\Users\Ahmed\Desktop\app\amazon-app\functions\package.json: Unexpected token / in JSON at position 93
+[error] !!  functions: Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Functions codebase could not be analyzed successfully. It may have a syntax or runtime error"}}
+[debug] [2023-12-29T08:56:25.511Z] Received signal SIGHUP 1
